@@ -1,10 +1,10 @@
-<h1>Listing Products</h1>
+<h1>Products</h1>
 <%= link_to 'New product', new_product_path, class: "btn btn-primary" %>
   <div class="row">
     <% @products.each do |product| %>
       <div class="col-md-4">
         <div class="card">
-<%= image_tag product.picture if product.picture.attached? %>
+        <%= image_tag product.picture if product.picture.attached? %>
             <div class="card-body">
               <h5 class="card-title"><%= product.name %></h5>
               <p class="card-text"><%= product.description %></p>
