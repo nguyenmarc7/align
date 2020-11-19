@@ -1,0 +1,13 @@
+<%= simple_form_for @product do |f| %>
+
+  <%= f.error_notification %>
+
+  <%= f.input :name %>
+
+  <%= f.input :description %>
+
+  <%= f.input :picture, as: :file %>
+
+  <%= f.button :submit, class: "btn-primary" %>
+  <%= link_to "Cancel", products_path, class: "btn btn-secondary" %>
+<% end %>

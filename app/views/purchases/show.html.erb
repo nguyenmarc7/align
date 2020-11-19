@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @product.name %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @product.description %>
+</p>
+ 
+<p>
+<%= image_tag(@product.picture) if @product.picture.attached? %>
+</p>
+
+<%= link_to 'Back', purchases_path, class: "btn btn-primary" %>
